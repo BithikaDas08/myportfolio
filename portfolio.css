@@ -161,7 +161,7 @@ body {
     height: auto;
     width: 60%;
     border-radius: 10px;
-   margin-left: 70px;
+   margin-left: 90px;
    
 }
 
@@ -203,7 +203,7 @@ body {
   }
 
   .about-img img {
-    width: 200px; /* increase if needed */
+    width: 300px; /* increase if needed */
     margin-bottom: 20px;
   }
 
@@ -923,3 +923,62 @@ html {
     padding: 20px;
   }
 }
+@media (max-width: 768px) {
+  .technical-skills {
+    text-align: left;       /* Align content to the left */
+    padding-left: 10px;     /* Optional: adjust spacing from edge */
+  }
+
+  .technical-skills .skill {
+    display: flex;
+    justify-content: space-between; /* Push percentage to the far right */
+    align-items: center;
+    width: 100%;
+  }
+
+  .technical-skills .skill-name {
+    flex: 1;                /* Take available space */
+    text-align: left;
+  }
+
+  .technical-skills .skill-percent {
+    margin-left: 10px;
+    text-align: right;
+  }
+
+  .technical-skills .skill-bar {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 768px) {
+  /* Move Technical Skills section to the left */
+  .technical-bars {
+    text-align: left;
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  /* Align heading to the left */
+  .heading1 {
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  /* Keep each bar aligned to the left */
+  .technical-bars .bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Position percentage labels so they don't overlap names */
+  .technical-bars .progress-line span::after {
+    top: -25px;
+    right: 0;
+  }
+  .technical-bars .progress-line span::before {
+    right: 8px;
+  }
+}
+
