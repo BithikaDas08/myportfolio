@@ -923,32 +923,7 @@ html {
     padding: 20px;
   }
 }
-@media (max-width: 768px) {
-  .technical-bars .bar {
-    display: block;
-    text-align: center;
-    margin-bottom: 25px;
-  }
 
-  .technical-bars .bar .info {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-
-  .technical-bars .bar .progress-line {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .technical-bars .progress-line span::after {
-    top: -25px;
-    right: -5px;
-  }
-
-  .technical-bars .progress-line span::before {
-    right: 3px;
-  }
     @media (max-width: 768px) {
   .skills-container {
     flex-direction: column;
@@ -967,4 +942,5 @@ html {
     text-align: left;
   }
 }
-}
+
+
