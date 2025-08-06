@@ -924,61 +924,37 @@ html {
   }
 }
 @media (max-width: 768px) {
-  .technical-skills {
-    text-align: left;       /* Align content to the left */
-    padding-left: 10px;     /* Optional: adjust spacing from edge */
-  }
-
-  .technical-skills .skill {
-    display: flex;
-    justify-content: space-between; /* Push percentage to the far right */
-    align-items: center;
-    width: 100%;
-  }
-
-  .technical-skills .skill-name {
-    flex: 1;                /* Take available space */
-    text-align: left;
-  }
-
-  .technical-skills .skill-percent {
-    margin-left: 10px;
-    text-align: right;
-  }
-
-  .technical-skills .skill-bar {
-    width: 100%;
-    margin-top: 5px;
-  }
-}
-@media (max-width: 768px) {
-  /* Move Technical Skills section to the left */
+  /* Make progress bars full width */
   .technical-bars {
-    text-align: left;
     width: 100%;
-    padding-left: 15px;
+    padding: 0 20px;
   }
 
-  /* Align heading to the left */
-  .heading1 {
-    text-align: left;
-    margin-left: 15px;
-  }
-
-  /* Keep each bar aligned to the left */
+  /* Align each bar neatly */
   .technical-bars .bar {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 10px;
   }
 
-  /* Position percentage labels so they don't overlap names */
+  /* Make the skill text and progress line appear in one row */
+  .technical-bars .bar .info {
+    width: 70px;
+    flex-shrink: 0;
+  }
+
+  .technical-bars .bar .progress-line {
+    flex: 1;
+    margin-left: 10px;
+  }
+
+  /* Place percentage labels slightly above the bar end */
   .technical-bars .progress-line span::after {
-    top: -25px;
+    top: -22px;
     right: 0;
   }
+
   .technical-bars .progress-line span::before {
-    right: 8px;
+    right: 7px;
   }
 }
-
