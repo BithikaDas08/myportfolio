@@ -923,25 +923,24 @@ html {
     padding: 20px;
   }
 }
-
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
   .skills-container {
     flex-direction: column;
-    align-items: flex-start; /* change from center to left align */
-    padding-left: 20px; /* optional spacing */
+    align-items: flex-start;
   }
 
-  .technical-bars,
-  .radial-bars {
-    width: 100%;
-    text-align: left; /* force left alignment */
-    margin-bottom: 30px;
+  .technical-bars {
+    width: 90%;
+    text-align: left;
+    margin-left: 0;
+    align-self: flex-start;
   }
 
   .technical-bars .bar {
-    text-align: left;
+    justify-content: flex-start;
   }
 }
+
 
 
 
