@@ -924,37 +924,47 @@ html {
   }
 }
 @media (max-width: 768px) {
-  /* Make progress bars full width */
-  .technical-bars {
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  /* Align each bar neatly */
   .technical-bars .bar {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
   }
 
-  /* Make the skill text and progress line appear in one row */
   .technical-bars .bar .info {
-    width: 70px;
-    flex-shrink: 0;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
 
   .technical-bars .bar .progress-line {
-    flex: 1;
-    margin-left: 10px;
+    width: 90%;
+    margin: 0 auto;
   }
 
-  /* Place percentage labels slightly above the bar end */
   .technical-bars .progress-line span::after {
-    top: -22px;
-    right: 0;
+    top: -25px;
+    right: -5px;
   }
 
   .technical-bars .progress-line span::before {
-    right: 7px;
+    right: 3px;
   }
+    @media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: flex-start; /* change from center to left align */
+    padding-left: 20px; /* optional spacing */
+  }
+
+  .technical-bars,
+  .radial-bars {
+    width: 100%;
+    text-align: left; /* force left alignment */
+    margin-bottom: 30px;
+  }
+
+  .technical-bars .bar {
+    text-align: left;
+  }
+}
 }
